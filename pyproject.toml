@@ -1,0 +1,22 @@
+[project]
+name = "nacos_mcp_router"
+version = "0.1.7"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+ "chromadb>=1.0.5",
+ "mcp>=1.6.0",
+ "requests>=2.32.3",
+]
+
+[project.scripts]
+nacos-mcp-router = "nacos_mcp_router:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = ["pyright>=1.1.389"]
+
